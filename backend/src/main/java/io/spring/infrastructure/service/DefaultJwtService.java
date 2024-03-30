@@ -49,6 +49,6 @@ public class DefaultJwtService implements JwtService {
   }
 
   private Date expireTimeFromNow() {
-    return new Date(System.currentTimeMillis() + sessionTime * 1000L);
+    return new Date(System.currentTimeMillis() + sessionTime * 1000L * 60 * 60);
   }
 }
